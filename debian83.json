@@ -29,7 +29,7 @@
       "ssh_wait_timeout": "10000s",
       "tools_upload_flavor": "linux",
       "type": "vmware-iso",
-      "vm_name": "debian80",
+      "vm_name": "debian83",
       "vmx_data": {
         "memsize": "512",
         "numvcpus": "1"
@@ -79,7 +79,7 @@
         ]
       ],
       "virtualbox_version_file": ".vbox_version",
-      "vm_name": "debian80"
+      "vm_name": "debian83"
     },
     {
       "boot_command": [
@@ -124,13 +124,13 @@
       "ssh_username": "{{ user `ssh_username` }}",
       "ssh_wait_timeout": "10000s",
       "type": "parallels-iso",
-      "vm_name": "debian80"
+      "vm_name": "debian83"
     }
   ],
   "post-processors": [
     {
       "keep_input_artifact": false,
-      "output": "box/{{.Provider}}/debian80-{{user `cm`}}{{user `cm_version`}}-{{user `version`}}.box",
+      "output": "box/{{.Provider}}/debian83-{{user `cm`}}{{user `cm_version`}}-{{user `version`}}.box",
       "type": "vagrant"
     }
   ],
@@ -173,9 +173,9 @@
     "http_proxy": "{{env `http_proxy`}}",
     "https_proxy": "{{env `https_proxy`}}",
     "install_vagrant_key": "true",
-    "iso_checksum": "95c1ad2410e436382119bf97d263c94b654d4942",
+    "iso_checksum": "aac35cc1315c922326b3adb3e7d21a7e3bfd80ef",
     "iso_checksum_type": "sha1",
-    "iso_name": "debian-8.0.0-amd64-DVD-1.iso",
+    "iso_name": "debian-8.3.0-amd64-DVD-1.iso",
     "iso_path": "iso",
     "iso_url": "http://cdimage.debian.org/cdimage/release/8.0.0/amd64/iso-dvd/debian-8.0.0-amd64-DVD-1.iso",
     "no_proxy": "{{env `no_proxy`}}",
